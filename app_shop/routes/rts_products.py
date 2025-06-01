@@ -2,8 +2,7 @@ from flask import request
 from app_shop import server
 from app_shop.model.products import Products
 from app_shop.repository import Repository
-import jwt
-import datetime
+
 
 db=Repository()
 
@@ -35,6 +34,6 @@ def delete_product(id):
     deleted=db.delete_product(id)
     return("OK", 200) if deleted else ("Product not found", 404)
 
-@server.route("products/<id>", methods=["PUT"])
+@server.route("/products/<id>", methods=["PUT"]) # type: ignore
 def update_product(id):
     data=request.get_json()

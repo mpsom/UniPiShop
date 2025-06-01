@@ -9,26 +9,28 @@ class Repository:
     def _add_some_products(self):
         self.products: List[Products] = [
             Products(
-                category="Φρούτα και λαχανικά",
+                category="Προϊόντα ψυγειου",
+                subcategory="Φρουτα και λαχανικά"
                 name="Μήλα",
                 price=2.05,
                 description="Ελληνικά μήλα στάρκινγκ από τη Καστοριά.",
-                image="C:/Users/psoma/Desktop/UniPiShop/products_pics",
+                image="C:/Users/psoma/Desktop/UniPiShop/static",
             ),
             Products(
                 category="Γαλακτοκομικά και ειδη ψυγείου",
+            
                 name="Τυρί Τρικαλινό Ελαφρύ Φέτες",
                 price=3.44,
                 description="""Ελαφρύ τυρί Τρικαλινό, 4μηνης ωρίμανσης, με μόνο 10% λιπαρά. 
                                 Ιδανικό για να το απολαύσετε σκέτο ή να δημιουργήσετε ελαφριές συνταγές.""",
-                image="C:/Users/psoma/Desktop/UniPiShop/products_pics",
+                image="C:/Users/psoma/Desktop/UniPiShop/static",
             ),
             Products(
                 category="Είδη προσωπικής περιποίησης",
                 name="AIM | HERBAL | Οδοντόκρεμα Family Protection Herbal 75ml",
                 description="""Active Fluoride & Ασβέστιο.Φόρμουλα που βοηθά στην ενδυνάμωση των δοντιών επανορθώνοντας ακόμα και τις μικρές αόρατες ενδείξεις τερηδόνας που προκαλούνται
                                 από κρυμμένα οξέα σακχάρων** πριν μετατραπούν σε τερηδόνα με αποτέλεσμα 10x πιο δυνατά δόντια.""",
-                image="C:/Users/psoma/Desktop/UniPiShop/products_pics",
+                image="C:/Users/psoma/Desktop/UniPiShop/static",
                 price=1.26,
             ),
         ]
