@@ -1,15 +1,17 @@
 from pymongo import MongoClient
 from flask import Flask, request, jsonify, Response
+
 import json
 
+from main import app
 
 client = MongoClient("mongodb://localhost:27017/")
 
 db = client["MyUniPiStore"]
 products = db["StoreGoods"]
 
-# αρχικοποιηση flask app
-app = Flask(__name__)
+
+
 
 
 # Insert product
@@ -85,9 +87,5 @@ def get_product_by_name(name):
         }
         return jsonify(product)
     return Response("No product found", status=500, mimetype="application/json")
-
-#Run Flask App
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
 
 

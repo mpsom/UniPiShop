@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="2 commit">
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="3 commit">
+      <change afterPath="$PROJECT_DIR$/app_shop/model/db_seeding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/model/products.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/routes/mongo-products.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/mongo_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/routes/rts_products.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Products/Aim herbal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Products/Apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Products/Trikalino.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
     <envs>
@@ -26,6 +43,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mpsom"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mpsom/UniPiShop.git",
+    "accountId": "11d2a703-3ec7-4729-ab9d-152d9e1731d8"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -34,6 +63,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2xp6Nfl2REy8Im8Yf0V3vWszQVY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,10 +73,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.db_seeding.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.mongo-products.executor": "Run",
+    "Python.mongo_products.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +93,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\psoma\Desktop\UniPiShop" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\routes" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\model" />
       <recent name="C:\Users\psoma\Desktop\UniPiShop\static\images\Products" />
     </key>
   </component>
@@ -79,7 +120,7 @@
       <workItem from="1748726732059" duration="1117000" />
       <workItem from="1748728456731" duration="1299000" />
       <workItem from="1748729776917" duration="895000" />
-      <workItem from="1748730693497" duration="6431000" />
+      <workItem from="1748730693497" duration="24571000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -89,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748742916395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3 commit">
+      <option name="closed" value="true" />
+      <created>1748774017924</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748774017924</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3 commit">
+      <option name="closed" value="true" />
+      <created>1748774045061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748774045061</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +157,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -108,9 +171,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 commit" />
+    <MESSAGE value="3 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo-products Coverage Results" MODIFIED="1748732793633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
+    <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748790687269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
+    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748862844062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
+    <SUITE FILE_PATH="coverage/UniPiShop$test.coverage" NAME="test Coverage Results" MODIFIED="1748797247742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
