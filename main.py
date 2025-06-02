@@ -1,7 +1,5 @@
-from flask import Flask
-
-# αρχικοποιηση flask app
-app = Flask(__name__)#, static_folder="static")
+from app_shop.model import server
+import app_shop.routes.mongo_products as mongo_products
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    server.run(debug=True, host="0.0.0.0", port=5000)

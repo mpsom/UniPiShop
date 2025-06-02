@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="3 commit">
-      <change afterPath="$PROJECT_DIR$/app_shop/model/db_seeding.py" afterDir="false" />
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="4 commit-Photos ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/model/products.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/repository.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/routes/mongo-products.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/mongo_products.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/routes/rts_products.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Products/Aim herbal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Products/Apple.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Products/Trikalino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/model/db_seeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/model/db_seeding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/routes/mongo_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/mongo_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/products/straws.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/model/static/images/products/straws.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/products/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/model/static/images/products/test.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/products/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/products/watermelon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/model/static/images/products/watermelon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +92,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\psoma\Desktop\UniPiShop" />
-      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop" />
-      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\routes" />
       <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\model" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop" />
+      <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\routes" />
       <recent name="C:\Users\psoma\Desktop\UniPiShop\static\images\Products" />
     </key>
   </component>
@@ -120,7 +119,7 @@
       <workItem from="1748726732059" duration="1117000" />
       <workItem from="1748728456731" duration="1299000" />
       <workItem from="1748729776917" duration="895000" />
-      <workItem from="1748730693497" duration="24571000" />
+      <workItem from="1748730693497" duration="33512000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -146,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748774045061</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4 commit-Photos ok">
+      <option name="closed" value="true" />
+      <created>1748863479425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748863479425</updated>
+    </task>
+    <task id="LOCAL-00005" summary="4 commit-Photos ok">
+      <option name="closed" value="true" />
+      <created>1748863525066</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748863525066</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,11 +187,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 commit" />
     <MESSAGE value="3 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 commit" />
+    <MESSAGE value="4 commit-Photos ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 commit-Photos ok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app_shop/routes/mongo_products.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748790687269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
-    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748862844062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748866299682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
+    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748873148259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$test.coverage" NAME="test Coverage Results" MODIFIED="1748797247742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

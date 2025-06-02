@@ -1,9 +1,10 @@
 from pymongo import MongoClient
-from flask import Flask, request, jsonify, Response
-
+from flask import request, jsonify, Response
 import json
 
-from main import app
+from app_shop.model import server
+
+
 
 client = MongoClient("mongodb://localhost:27017/")
 
@@ -16,7 +17,7 @@ products = db["StoreGoods"]
 
 # Insert product
 # Create Operation
-@app.route("/insertproduct", methods=["POST"])
+@server.route("/insertproduct", methods=["POST"])
 def insert_product():
     # Request JSON data
     data = None
@@ -63,14 +64,14 @@ def insert_product():
 
 # Read operations
 # Get all products
-@app.route("/getallproducts", methods=["GET"])
+@server.route("/getallproducts", methods=["GET"])
 def get_products_count():
     number_of_products = products.count_documents({})
     return jsonify({"Number of products": number_of_products})
 
 
 # Find product by name
-@app.route("/getproduct/<string:name>", methods=["GET"])
+@server.route("/getproduct/<string:name>", methods=["GET"])
 def get_product_by_name(name):
     if name == None:
         return Response("Bad request", status=500, mimetype="application/json")
