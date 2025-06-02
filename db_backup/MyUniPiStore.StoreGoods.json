@@ -1,0 +1,288 @@
+[{
+  "_id": "0a705cbe-ca4b-4558-a45a-17dce69e6e60",
+  "name": "Καρπούζι",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Φρούτα",
+  "description": "Τα καρπούζια είναι από τα πιο δημοφιλή φρούτα του καλοκαιριού. Έχουν λίγες θερμίδες και λόγω της μεγάλης περιεκτικότητας τους σε νερό (90%) είναι ιδανική επιλογή για δροσιστικό σνακ.",
+  "price": 7.12,
+  "image": "/static/images/products/watermelon.jpg"
+},
+{
+  "_id": "1263d19d-c47c-4715-a57e-6e4af685352a",
+  "name": "Φράουλες",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Φρούτα",
+  "description": "Οι φράουλες έχουν πολλές ευεργετικές ιδιότητες, είναι πλούσιες σε βιταμίνες (Β & C), ενώ παράλληλα περιέχουν σημαντικές ποσότητες μαγγανίου, καλίου, σιδήρου και φυτικών ινών.",
+  "price": 2.08,
+  "image": "/static/images/products/straws.jpg"
+},
+{
+  "_id": "585ce68e-7a48-490e-ae74-f1c3909bb51f",
+  "name": "Μπανάνες DOLE",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Φρούτα",
+  "description": "Οι μπανάνες είναι πλούσιες σε ιχνοστοιχεία, φυτικές ίνες και υδατάνθρακες, ενώ περιέχουν βιταμίνες (Α, Β6 & C), κάλιο, μαγνήσιο, χαλκό και μαγγάνιο.",
+  "price": 2.4,
+  "image": "/static/images/products/bananas.jpg"
+},
+{
+  "_id": "cad651da-195b-429f-aedf-c1f57c2d30df",
+  "name": "Αγγούρι",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Λαχανικά",
+  "description": "Τα αγγούρια είναι φτωχά σε θερμίδες, ενώ παράλληλα προσφέρουν στον οργανισμό μας πολύτιμα θρεπτικά συστατικά. Ανήκουν στα λαχανικά με την υψηλότερη περιεκτικότητα σε νερό, περίπου 95% και συμβάλλουν με αυτόν τον τρόπο στην επαρκή ενυδάτωση και διατήρηση της ισορροπίας του νερού στο σώμα μας.",
+  "price": 0.35,
+  "image": "/static/images/products/cucumber.jpg"
+},
+{
+  "_id": "edef7a73-216f-45b2-ad99-8717a308147a",
+  "name": "Πατάτες",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Λαχανικά",
+  "description": "Οι πατάτες ανήκουν στα αμυλούχα λαχανικά, αποτελούν πηγή υδατανθράκων, βιταμινών (Β1, Β2, Β6, C) και περιέχουν περισσότερο κάλιο από οποιοδήποτε άλλο φρέσκο λαχανικό. Επιπλέον, περιέχουν φυτικές ίνες, φολικό οξύ και αντιοξειδωτικά.",
+  "price": 0.76,
+  "image": "/static/images/products/potato.jpg"
+},
+{
+  "_id": "bd87e57b-57c8-4c60-8f64-5ee4d4871cc9",
+  "name": "Μπρόκολο",
+  "category": "Φρούτα & Λαχανικά",
+  "subcategory": "Λαχανικά",
+  "description": "Το μπρόκολο ανήκει στην ίδια οικογένεια λαχανικών με το κουνουπίδι και το λάχανο. Έχει χαμηλή θερμιδική αξία, αλλά υψηλή περιεκτικότητα σε βιταμίνες (C, E & K), σίδηρο, φολικό οξύ και αντιοξειδωτικά και προσφέρει ανεκτίμητα οφέλη στον οργανισμό. Καταναλώνεται βραστό, μαγειρεμένο ή τουρσί.",
+  "price": 1.26,
+  "image": "/static/images/products/broccoli.jpg"
+},
+{
+  "_id": "a9c1a729-997c-45d3-8d93-1fe92cf4a5f5",
+  "name": "ΔΕΛΤΑ Μμμilk Γάλα Υψηλής Παστερίωσης 1,5% ",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Οικογενειακό Γάλα υψηλής θερμικής επεξεργασίας με 1,5% λιπαρά, ομογενοποιημένο, 51 ημερών.",
+  "price": 2.77,
+  "image": "/static/images/products/delta-milk.jpg"
+},
+{
+  "_id": "0c564486-c627-4895-8042-2af568e2b1b0",
+  "name": "ΟΛΥΜΠΟΣ Επιλεγμένο Φρέσκο Γάλα 1,7%",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Το φρέσκο γάλα ΟΛΥΜΠΟΣ επιλεγμένο με λίπος 1,7% παράγεται από 100% ελληνικό φρέσκο γάλα.",
+  "price": 1.59,
+  "image": "/static/images/products/olympos-milk.jpg"
+},
+{
+  "_id": "ab52aee3-76a6-4b98-9ac0-4d62c5df47f4",
+  "name": "ΟΛΥΜΠΟΣ Protein Κεφίρ 1%",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Το Κεφίρ ΟΛΥΜΠΟΣ Protein έχει υψηλή περιεκτικότητα σε πρωτεΐνη, χαμηλά λιπαρά, καλλιέργειες Κεφίρ, Lactobacillus rhamnosus, LGG® και Bifidobacterium, BB-12®.",
+  "price": 1.92,
+  "image": "/static/images/products/olympos-kefir-protein.jpg"
+},
+{
+  "_id": "8e0284c0-955c-4bab-b7ca-4062b1e27ccb",
+  "name": "ΦΑΓΕ Total Γιαούρτι 2%",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Πλούσιο, κρεμώδες στραγγιστό γιαούρτι με μόλις 2% λιπαρά. Υψηλή περιεκτικότητα πρωτεΐνης, πλούσιο σε ασβέστιο.",
+  "price": 4.88,
+  "image": "/static/images/products/fage-total.jpg"
+},
+{
+  "_id": "d03dc6e8-9ceb-49cc-8b81-02bc3ad20b22",
+  "name": "ΦΑΓΕ Total Γιαούρτι 3x200g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Στραγγιστό γιαούρτι αγελάδος με 5% λιπαρά.",
+  "price": 3.65,
+  "image": "/static/images/products/fage-total-5-3x200.jpg"
+},
+{
+  "_id": "1184f57b-ff37-4dc2-8f6a-d9f6c4e2568e",
+  "name": "KPI KPI Superspoon High Protein ",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Στραγγιστό γιαούρτι 0% 2x205g λιπαρά με υψηλή περιεκτικότητα σε πρωτεΐνες.",
+  "price": 2.48,
+  "image": "/static/images/products/superspoon.jpg"
+},
+{
+  "_id": "535dcb00-f6fd-41a8-be95-f1351a9c59e9",
+  "name": "Vitaline Go Protein Μπανάνα",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Επιδόρπιο Γιαουρτιού Μπανάνα Βρώμη Αμύγδαλο Σιτάρι & Chia 2x170g.Απολαυστικό στραγγιστό γιαούρτι με βρώμη, μπανάνα, αμύγδαλο, σιτάρι & chia. Με 0% λιπαρά και 15g πρωτεΐνης σε κάθε κύπελλο. Ενέργεια και δύναμη σε κάθε κουταλιά. Χωρίς λιπαρά και χωρίς προσθήκη ζάχαρης.",
+  "price": 2.73,
+  "image": "/static/images/products/vitaline-go-protein-banana.jpg"
+},
+{
+  "_id": "8d7bdb7b-c173-4dec-a2ed-ddfd09b429ed",
+  "name": "Αιγοπρόβειο Τυρί ΗΠΕΙΡΟΣ Ελαφρύ σε Άλμη 400g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Τυροκομικό προϊόν σε άλμη από παστεριωμένο μερικώς αποβουτυρωμένο αιγοπρόβειο γάλα. Λιγότερα λιπαρά σε σύγκριση με άλλα πλήρη ελληνικά λευκά τυριά.",
+  "price": 6,
+  "image": "/static/images/products/epiros-light-salami-400.jpg"
+},
+{
+  "_id": "2fd2a4d0-ab8c-435a-9b5b-7f41b56d3169",
+  "name": "Μοτσαρέλα DIROLLO Φρέσκια 8,5% Λιπαρά 125g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Φρέσκο τυρί mozzarella. Παρασκευάζεται από παστεριωμένο αγελαδινό γάλα. Έχει λευκό χρώμα, ήπια γεύση και ευχάριστο άρωμα.",
+  "price": 1.48,
+  "image": "/static/images/products/dirollo-mozzarella.jpg"
+},
+{
+  "_id": "544c5d1e-1428-4405-b093-699f1f0065ea",
+  "name": "Cottage DIROLLO 2,2% Λιπαρά 225g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Το Dirollo Cottage έχει πλούσια γεύση και τα πιο μειωμένα λιπαρά της κατηγορίας cottage cheese (μόνο 2,2%).",
+  "price": 2.9,
+  "image": "/static/images/products/dirollo-cottage.jpg"
+},
+{
+  "_id": "6219b21e-6e00-46ba-9a16-9069b912faf1",
+  "name": "Cottage ARLA Protein 200g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Cottage με χαμηλά λιπαρά και υψηλή περιεκτικότητα σε πρωτεΐνη.",
+  "price": 2.1,
+  "image": "/static/images/products/arla-protein.jpg"
+},
+{
+  "_id": "920b53ed-b8b7-4d06-b604-6908d6610f68",
+  "name": "Τυρί Κρέμα PHILADELPHIA 300g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Γαλακτοκομικά",
+  "description": "Τυροκομικό προϊόν. Τυρί κρέμα με μοναδική, φρέσκια γεύση και απαλή, κρεμώδη υφή.",
+  "price": 3.98,
+  "image": "/static/images/products/philadelphia.jpg"
+},
+{
+  "_id": "ec8bca2c-6afa-4616-b2d5-5c02eced40f2",
+  "name": "POP BAKERY Ζύμη για Πίτσα Αφράτη 400g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Ζύμες νωπές",
+  "description": "Αφράτη ζύμη για πίτσα ψυγείου.",
+  "price": 3.65,
+  "image": "/static/images/products/popbakery-pizza.jpg"
+},
+{
+  "_id": "c600be86-a697-42a8-80b2-08483846b6f8",
+  "name": "SUPER FRESCO Μαργαρίνη Κλασικό 200g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Μαργαρίνες",
+  "description": "Λιπαρή ύλη για επάλειψη 70% με βιταμίνες A, D & E. Κατάλληλο για επάλειψη και κάθε μαγειρική ή ζαχαροπλαστική χρήση.",
+  "price": 0.75,
+  "image": "/static/images/products/superfresco.jpg"
+},
+{
+  "_id": "caf17d93-8383-433d-8676-46c5529063b5",
+  "name": "LURPAK Soft Μείγμα Λιπαρών Υλών για Επάλειψη Ανάλατο 225g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Βούτυρα",
+  "description": "Μείγμα λιπαρών υλών για επάλειψη 78% (52% λιπαρά γάλακτος & 26% φυτικά λιπαρά). Το Lurpak Soft παράγεται αναμιγνύοντας αγνό βούτυρο Lurpak με λάδι ελαιοκράμβης. Δεν περιέχει φοινικέλαιο.",
+  "price": 3.36,
+  "image": "/static/images/products/lurpak-soft-225.jpg"
+},
+{
+  "_id": "c92ee71b-7475-455c-87cc-079eceac90d3",
+  "name": "IFANTIS Fouantre Καπνιστή Γαλοπούλα",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Αλλαντικά",
+  "description": "Προϊόν θερμικής επεξεργασίας - καπνιστό από αυτοτελή τεμάχια κρέατος. Έχει πλούσια γεύση και μόνο 1% λιπαρά.",
+  "price": 5.03,
+  "image": "/static/images/products/fouantre.jpg"
+},
+{
+  "_id": "fe40597b-9a19-4817-92f1-6bbea08ec3ea",
+  "name": "IFANTIS Βραστή Γαλοπούλα Φιλέτο σε φέτες Χωρίς γλουτένη 160g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Αλλαντικά",
+  "description": "Γαλοπούλα βραστή. Προϊόν θερμικής επεξεργασίας από αυτοτελή τεμάχια κρέατος.",
+  "price": 3.28,
+  "image": "/static/images/products/ifantis-turkey.jpg"
+},
+{
+  "_id": "408ebef5-a6ed-416b-afc5-abb84da945ce",
+  "name": "ΦΑΡΜΑ ΑΝΤΩΝΑΚΗ Καπνιστή Μπριζόλα με Θυμάρι & Μέλι Χωρίς γλουτένη 210g",
+  "category": "Προϊόντα ψυγείου",
+  "subcategory": "Παραδοσιακά αλλαντικά",
+  "description": "Προϊόν θερμικής επεξεργασίας από αυτοτελή τεμάχια κρέατος.",
+  "price": 3.48,
+  "image": "/static/images/products/apaki.jpg"
+},
+{
+  "_id": "bef5438f-b63f-447d-bd3d-2bcc7d3097ec",
+  "name": "MELISSA Μακαρόνια Νο6 500g",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Ζυμαρικά",
+  "description": "Ζυμαρικά από 100% ελληνικό σιμιγδάλι σκληρού σιταριού.",
+  "price": 0.64,
+  "image": "/static/images/products/melissa_spaghetti.jpg"
+},
+{
+  "_id": "3986a0fe-b2c5-4eae-bd7a-50eeb16b04c0",
+  "name": "Παπαδοπούλου Digestive Μπισκότα Vegan ",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Μπισκότα, Σοκολάτες & Ζαχαρώδη",
+  "description": "Μπισκότα με αλεύρι ολικής άλεσης.",
+  "price": 2.15,
+  "image": "/static/images/products/digestive.jpg"
+},
+{
+  "_id": "6aaba90a-5004-4828-9bbb-873bc8a5afbc",
+  "name": "CRUNCH Σοκολάτα Γάλακτος ",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Σοκολάτες",
+  "description": "Σοκολάτα γάλακτος με τραγανούς κόκκους δημητριακών. Χωρίς γλουτένη.",
+  "price": 2.15,
+  "image": "/static/images/products/crunch.jpg"
+},
+{
+  "_id": "e58f88b9-bb03-4461-84cf-8caa1f0bf800",
+  "name": "ΑΛΛΑΤΙΝΗ Αλεύρι για Όλες τις Χρήσεις",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Αλεύρι & Σιμιγδάλι",
+  "description": "Αλεύρι για όλες τις χρήσεις.",
+  "price": 1.18,
+  "image": "/static/images/products/alevri.jpg"
+},
+{
+  "_id": "fe2874b9-7d50-4eaa-9ce3-8b89e67be166",
+  "name": "BEN'S ORIGINAL Ρύζι Basmati",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Ρύζι",
+  "description": "Αφράτοι κόκκοι ρυζιού σε μαγειρικό σακουλάκι για ευκολία στο μαγείρεμα με διακριτική γεύση και φυσικό λευκό χρώμα. Χωρίς γλουτένη. Κατάλληλο για χορτοφάγους.",
+  "price": 4,
+  "image": "/static/images/products/bens_rice.jpg"
+},
+{
+  "_id": "6b8b83da-9f4f-4e41-b8ec-4dfb8cee9941",
+  "name": "3 ΑΛΦΑ Ρύζι Basmati Ινδίας",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Ρύζι",
+  "description": "Ρύζι Μπασμάτι αρωματικό ρύζι για κάθε χρήση, με ιδιαίτερη γεύση. Χρησιμοποιείται για πιλάφι και για εξωτικές συνταγές.",
+  "price": 3.3,
+  "image": "/static/images/products/3alfa_basmati.jpg"
+},
+{
+  "_id": "05aa01ca-49db-4f6e-b6f0-66cbe63f2044",
+  "name": "DIMFIL Bio Farma Κάσιους Ωμό Βιολογικό Χωρίς αλάτι",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Ξηροί καρποί & Σνακ",
+  "description": "Αρίστης ποιότητας κάσιους άψητα βιολογικής καλλιέργειας με υπέροχη γεύση.",
+  "price": 4.96,
+  "image": "/static/images/products/biofarma_kasious.jpg"
+},
+{
+  "_id": "7efc81a0-4d67-4e48-884e-f6e11f60cd56",
+  "name": "LAY'S Στο Φούρνο Πατατάκια με Αλάτι",
+  "category": "Τρόφιμα παντοπωλείου",
+  "subcategory": "Πατατάκια, Γαριδάκια & άλλα Σνακ",
+  "description": "Σνακ από πατάτα με αλάτι.",
+  "price": 1.5,
+  "image": "/static/images/products/lays.jpg"
+}]
