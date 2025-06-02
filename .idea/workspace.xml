@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="5 commit-All ok">
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="6 commit-db completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/model/db_seeding.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/model/db_seeding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_backup/MyUniPiStore.StoreGoods.json" beforeDir="false" afterPath="$PROJECT_DIR$/db_backup/MyUniPiStore.StoreGoods.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1748726732059" duration="1117000" />
       <workItem from="1748728456731" duration="1299000" />
       <workItem from="1748729776917" duration="895000" />
-      <workItem from="1748730693497" duration="44504000" />
+      <workItem from="1748730693497" duration="48104000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -172,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748873818690</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="6 commit-db completed">
+      <option name="closed" value="true" />
+      <created>1748885394935</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748885394935</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +208,8 @@
     <MESSAGE value="3 commit" />
     <MESSAGE value="4 commit-Photos ok" />
     <MESSAGE value="5 commit-All ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 commit-All ok" />
+    <MESSAGE value="6 commit-db completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="6 commit-db completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -214,8 +223,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748880374962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748884169101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
+    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748887271055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$test.coverage" NAME="test Coverage Results" MODIFIED="1748881545144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
