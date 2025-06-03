@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="7 commit-ai draft, rename some routes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="7 commit-ai draft 2">
       <change beforePath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       <workItem from="1748728456731" duration="1299000" />
       <workItem from="1748729776917" duration="895000" />
       <workItem from="1748730693497" duration="54506000" />
-      <workItem from="1748946331090" duration="3903000" />
+      <workItem from="1748946331090" duration="4236000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -199,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748907092183</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="7 commit-ai draft 2">
+      <option name="closed" value="true" />
+      <created>1748956588710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748956588710</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +235,8 @@
     <MESSAGE value="5 commit-All ok" />
     <MESSAGE value="6 commit-db completed" />
     <MESSAGE value="7 commit-ai draft, rename some routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 commit-ai draft, rename some routes" />
+    <MESSAGE value="7 commit-ai draft 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="7 commit-ai draft 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
