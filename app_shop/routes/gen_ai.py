@@ -1,12 +1,13 @@
 import requests
 import json
 
+from flask import jsonify
+
 from app_shop.model import server
 
 GROQ_API_KEY = "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"
 
 
-@server.route("/aiprompt", methods=["GET"])
 def groq(prompt):
     post_url = "https://api.groq.com/openai/v1/chat/completions"
     post_data = {
@@ -30,7 +31,25 @@ def groq(prompt):
     print(answer)
     return answer["choices"][0]["message"]["content"]
 
+
+q1 = "Πότε θα πάρω πτυχίο; Απάντησε με ένα αστείο τρόπο."
+q2 = "δωσε μου συνταγη για τα προϊόντα: μπροκολο, μακαρονια, βουτυρο και philadelpia cheese"
+q3 = "Βαθμολόγησε διατροφικά τις επιλογες μου: μπροκολο, μακαρονια, βουτυρο και philadelpia cheese"
+a1 = groq(q1)
+a2 = groq(q2)
+a3 = groq(q3)
+
+print(f"Q: {q1}, \n=============================================================\n "
+      f"Q2: {q2}, \n=============================================================\n Q3: {q3}")
+print(f"A1: {a1}, \n=============================================================\n "
+      f"A2: {a2},\n=============================================================\n A3: {a3}")
+
+
+@server.route("/aiprompt", methods=["GET"])
+def aiprompt():
     q = "Πότε θα πάρω πτυχίο; Απάντησε με ένα αστείο τρόπο."
-    a = groq(q)
-    print(f"Q: {q}")
-    print(f"A: {a}")
+    a = groq(q1)
+    return jsonify({
+        "question": q,
+        "answer": a
+    })

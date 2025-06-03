@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="6 commit-db completed">
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="7 commit-ai draft, rename some routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/routes/mongo_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/db_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,18 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mpsom"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mpsom&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mpsom/UniPiShop.git",
-    "accountId": "11d2a703-3ec7-4729-ab9d-152d9e1731d8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mpsom/UniPiShop.git&quot;,
+    &quot;accountId&quot;: &quot;11d2a703-3ec7-4729-ab9d-152d9e1731d8&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/test.py" root0="SKIP_INSPECTION" />
   </component>
@@ -65,28 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.db_seeding.executor": "Run",
-    "Python.gen_ai.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mongo-products.executor": "Run",
-    "Python.mongo_products.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.db_seeding.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_ai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongo-products.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongo_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\psoma\Desktop\UniPiShop\app_shop\model" />
@@ -116,7 +116,8 @@
       <workItem from="1748726732059" duration="1117000" />
       <workItem from="1748728456731" duration="1299000" />
       <workItem from="1748729776917" duration="895000" />
-      <workItem from="1748730693497" duration="53591000" />
+      <workItem from="1748730693497" duration="54506000" />
+      <workItem from="1748946331090" duration="3903000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -190,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748895519392</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="7 commit-ai draft, rename some routes">
+      <option name="closed" value="true" />
+      <created>1748907092183</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748907092183</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +228,8 @@
     <MESSAGE value="4 commit-Photos ok" />
     <MESSAGE value="5 commit-All ok" />
     <MESSAGE value="6 commit-db completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 commit-db completed" />
+    <MESSAGE value="7 commit-ai draft, rename some routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="7 commit-ai draft, rename some routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -233,9 +243,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UniPiShop$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1748906057806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
+    <SUITE FILE_PATH="coverage/UniPiShop$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1748955337828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748884169101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
-    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748887271055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748956047962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$test.coverage" NAME="test Coverage Results" MODIFIED="1748881545144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
