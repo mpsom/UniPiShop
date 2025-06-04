@@ -1,7 +1,7 @@
 import requests
 import json
 
-from flask import jsonify
+from flask import jsonify, request
 
 from app_shop.model import server
 
@@ -32,24 +32,34 @@ def groq(prompt):
     return answer["choices"][0]["message"]["content"]
 
 
-q1 = "Πότε θα πάρω πτυχίο; Απάντησε με ένα αστείο τρόπο."
-q2 = "δωσε μου συνταγη για τα προϊόντα: μπροκολο, μακαρονια, βουτυρο και philadelpia cheese"
-q3 = "Βαθμολόγησε διατροφικά τις επιλογες μου: μπροκολο, μακαρονια, βουτυρο και philadelpia cheese"
-a1 = groq(q1)
-a2 = groq(q2)
-a3 = groq(q3)
+@server.route("/finalcart", methods=["POST"])
+def get_cart():
+    global user_cart
+    user_cart=request.get_json()
+    print(user_cart)
+    product_names=[item ["name"]for item in user_cart]
+    print(product_names)
+    # q2 = "δωσε μου συνταγη για τα προϊόντα" + ":".join(product_names) +"πες δεν εχω διαθεσιμα προϊόντα αν δεν λαβεις"
+    # q3 = "Βαθμολόγησε διατροφικά τις επιλογες μου" + ":".join(product_names)
+    # a2 = groq(q2)
+    # a3 = groq(q3)
+    # print(
+    #     f"Q2: {q2}, \n=============================================================\n Q3: {q3}")
+    # print(
+    #     f"A2: {a2}, \n=============================================================\n A3: {a3}")
+    return "Cart successfully posted", 200
 
-print(f"Q: {q1},  \n=============================================================\n "
-      f"Q2: {q2}, \n=============================================================\n Q3: {q3}")
-print(f"A1: {a1}, \n=============================================================\n "
-      f"A2: {a2}, \n=============================================================\n A3: {a3}")
 
 
-@server.route("/aiprompt", methods=["GET"])
-def aiprompt():
-    q = "Πότε θα πάρω πτυχίο; Απάντησε με ένα αστείο τρόπο."
-    a = groq(q1)
-    return jsonify({
-        "question": q,
-        "answer": a
-    })
+
+
+
+
+# @server.route("/aiprompt", methods=["GET"])
+# def aiprompt():
+#     q = "Πότε θα πάρω πτυχίο; Απάντησε με ένα αστείο τρόπο."
+#     a = groq(q)
+#     return jsonify({
+#         "question": q,
+#         "answer": a
+#     })
