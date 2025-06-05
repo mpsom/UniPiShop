@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="7 commit-cart sended to backend">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_shop/routes/gen_ai.py" afterDir="false" />
-    </list>
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="8 commit-cart sended to backend and response the ai prompt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +119,7 @@
       <workItem from="1748957523557" duration="8589000" />
       <workItem from="1749031649469" duration="712000" />
       <workItem from="1749049198471" duration="14753000" />
-      <workItem from="1749117089376" duration="3012000" />
+      <workItem from="1749117089376" duration="4414000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -236,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749081990531</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="8 commit-cart sended to backend and response the ai prompt">
+      <option name="closed" value="true" />
+      <created>1749130814116</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749130814116</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +273,8 @@
     <MESSAGE value="7 commit-ai draft, rename some routes" />
     <MESSAGE value="7 commit-ai draft 2" />
     <MESSAGE value="7 commit-cart sended to backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 commit-cart sended to backend" />
+    <MESSAGE value="8 commit-cart sended to backend and response the ai prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="8 commit-cart sended to backend and response the ai prompt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -286,8 +292,8 @@
     <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748884169101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
     <SUITE FILE_PATH="coverage/UniPiShop$main.coverage" NAME="main Coverage Results" MODIFIED="1748956047962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
-    <SUITE FILE_PATH="coverage/UniPiShopAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1749128113265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UniPiShopAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1749130173054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShop$test.coverage" NAME="test Coverage Results" MODIFIED="1748881545144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UniPiShopAPI$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1749081516139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
+    <SUITE FILE_PATH="coverage/UniPiShopAPI$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1749130153290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
   </component>
 </project>
