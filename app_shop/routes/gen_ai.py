@@ -1,7 +1,7 @@
 import requests
 import json
 
-from flask import jsonify, request
+from flask import jsonify, request, Response
 
 from app_shop.model import server
 
@@ -49,7 +49,7 @@ def get_cart():
     #     f"Q2: {q2}, \n=============================================================\n Q3: {q3}")
     # print(
     #     f"A2: {a2}, \n=============================================================\n A3: {a3}")
-    return "Cart successfully posted", 200
+    return jsonify([{"==================\n":a2},{"\n==================\n":a3}]),200
 
 
 
