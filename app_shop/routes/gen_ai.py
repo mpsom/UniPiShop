@@ -25,8 +25,8 @@ def groq(prompt):
     }
     response_post = requests.post(post_url, data=json_data, headers=headers)
 
-    print("\nPOST Request Status Code:", response_post.status_code)
-    print("POST Request JSON Response:")
+    #print("\nPOST Request Status Code:", response_post.status_code)
+    #print("POST Request JSON Response:")
     answer = response_post.json()
     print(answer)
     return answer["choices"][0]["message"]["content"]
@@ -36,13 +36,15 @@ def groq(prompt):
 def get_cart():
     global user_cart
     user_cart=request.get_json()
-    print(user_cart)
+    #print(user_cart)
     product_names=[item ["name"]for item in user_cart]
     print(product_names)
-    # q2 = "δωσε μου συνταγη για τα προϊόντα" + ":".join(product_names) +"πες δεν εχω διαθεσιμα προϊόντα αν δεν λαβεις"
-    # q3 = "Βαθμολόγησε διατροφικά τις επιλογες μου" + ":".join(product_names)
-    # a2 = groq(q2)
-    # a3 = groq(q3)
+    q2= "δωσε μου συνταγη για τα προϊόντα" + ":".join(product_names)
+    q3 = "Βαθμολόγησε διατροφικά τις επιλογες μου" + ":".join(product_names)
+    print(q3)
+    a2 = groq(q2)
+    a3 = groq(q3)
+    print(a2,a3)
     # print(
     #     f"Q2: {q2}, \n=============================================================\n Q3: {q3}")
     # print(
