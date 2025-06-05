@@ -89,4 +89,36 @@ def get_product_by_name(name):
         return jsonify(product)
     return Response("No product found", status=500, mimetype="application/json")
 
+#Επιστροφη ολων των προιοντων
+@server.route("/products", methods=["GET"])
+def get_all_products():
+    all_products = []
+    for product in products.find():
+        all_products.append({
+            "_id": str(product["_id"]),
+            "name": product["name"],
+            "category": product["category"],
+            "subcategory": product["subcategory"],
+            "description": product["description"],
+            "price": product["price"],
+            "image": product["image"]
+        })
+    return jsonify(all_products)
 
+# Συλλογή για τις αγορές
+purchases = db["Purchases"]
+
+# Endpoint για καταχώρηση αγοράς
+@server.route("/purchase", methods=["POST"])
+def submit_purchase():
+    try:
+        data = json.loads(request.data)
+    except Exception as e:
+        return Response("Bad JSON content", status=400, mimetype="application/json")
+
+    if not data or "timestamp" not in data or "items" not in data:
+        return Response("Missing required fields", status=400, mimetype="application/json")
+
+    purchases.insert_one(data)
+
+    return Response("Purchase recorded successfully", status=200, mimetype="application/json")
