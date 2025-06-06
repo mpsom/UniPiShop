@@ -2,17 +2,12 @@ from pymongo import MongoClient
 from flask import request, jsonify, Response
 import json
 
-from app_shop.model import server
-
-
+from app_api.model import server
 
 client = MongoClient("mongodb://localhost:27017/")
 
 db = client["MyUniPiStore"]
 products = db["StoreGoods"]
-
-
-
 
 
 # Insert product
@@ -64,7 +59,7 @@ def insert_product():
 
 # Read operations
 # Get all products
-@server.route("/getallproducts", methods=["GET"])
+@server.route("/productsamount", methods=["GET"])
 def get_products_count():
     number_of_products = products.count_documents({})
     return jsonify({"Number of products": number_of_products})
@@ -75,22 +70,28 @@ def get_products_count():
 def get_product_by_name(name):
     if name == None:
         return Response("Bad request", status=500, mimetype="application/json")
-    product = products.find_one({"name": name})
-    if product != None:
-        product = {
-            "_id": str(product["_id"]),
-            "name": product["name"],
-            "category": product["category"],
-            "subcategory": product["subcategory"],
-            "description": product["description"],
-            "price": product["price"],
-            "image": product["image"],
+
+    filtered_products = [
+        {
+            "_id": str(p["_id"]),
+            "name": p["name"],
+            "category": p["category"],
+            "subcategory": p["subcategory"],
+            "description": p["description"],
+            "price": p["price"],
+            "image": p["image"],
         }
-        return jsonify(product)
+
+        for p in products if name.lower() in p["name"].lower()
+    ]
+    if filtered_products:
+        return jsonify(filtered_products)
+
     return Response("No product found", status=500, mimetype="application/json")
 
-#Επιστροφη ολων των προιοντων
-@server.route("/products", methods=["GET"])
+
+# Επιστροφη ολων των προιοντων
+@server.route("/getallproducts", methods=["GET"])
 def get_all_products():
     all_products = []
     for product in products.find():
@@ -105,20 +106,4 @@ def get_all_products():
         })
     return jsonify(all_products)
 
-# Συλλογή για τις αγορές
-purchases = db["Purchases"]
 
-# Endpoint για καταχώρηση αγοράς
-@server.route("/purchase", methods=["POST"])
-def submit_purchase():
-    try:
-        data = json.loads(request.data)
-    except Exception as e:
-        return Response("Bad JSON content", status=400, mimetype="application/json")
-
-    if not data or "timestamp" not in data or "items" not in data:
-        return Response("Missing required fields", status=400, mimetype="application/json")
-
-    purchases.insert_one(data)
-
-    return Response("Purchase recorded successfully", status=200, mimetype="application/json")

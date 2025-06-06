@@ -99,7 +99,7 @@
 },
 {
   "_id": "1184f57b-ff37-4dc2-8f6a-d9f6c4e2568e",
-  "name": "KPI KPI Superspoon High Protein ",
+  "name": "KPI KPI Superspoon High Protein",
   "category": "Προϊόντα ψυγείου",
   "subcategory": "Γαλακτοκομικά",
   "description": "Στραγγιστό γιαούρτι 0% 2x205g λιπαρά με υψηλή περιεκτικότητα σε πρωτεΐνες.",
@@ -185,7 +185,7 @@
   "subcategory": "Βούτυρα",
   "description": "Μείγμα λιπαρών υλών για επάλειψη 78% (52% λιπαρά γάλακτος & 26% φυτικά λιπαρά). Το Lurpak Soft παράγεται αναμιγνύοντας αγνό βούτυρο Lurpak με λάδι ελαιοκράμβης. Δεν περιέχει φοινικέλαιο.",
   "price": 3.36,
-  "image": "/static/images/products/lurpak-soft-225.jpg"
+  "image": "/static/images/products/lurpak.jpg"
 },
 {
   "_id": "c92ee71b-7475-455c-87cc-079eceac90d3",
