@@ -34,7 +34,6 @@ def get_history():
 
         all_purchases = list(purchases.find({}, {"_id": 0}))
 
-
         return jsonify(all_purchases), 200
     except Exception as e:
         return jsonify({"Δεν υπάρχει ιστορικό": str(e)}), 500

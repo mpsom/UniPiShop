@@ -1,7 +1,7 @@
-import requests
+import requests #Χρήση για αιτήματα (requests) προς άλλους servers
 import json
 
-from flask import jsonify, request, Response
+from flask import jsonify, request # αντικείμενο της Flask για τον server για διάβασμα τι έστειλε κάποιος client
 
 from app_api.model import server
 

@@ -106,4 +106,3 @@ def get_all_products():
         })
     return jsonify(all_products)
 
-
