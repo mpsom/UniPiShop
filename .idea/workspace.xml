@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="Commit 12- scraping market in ok, pending xalkiadakis">
-      <change afterPath="$PROJECT_DIR$/app_api/routes/scraping_bazaar.py" afterDir="false" />
+    <list default="true" id="8ab0aceb-70d0-4430-9691-1f70e6974add" name="Changes" comment="Commit 13- scraping market in and bazaar ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_api/routes/scraping_mrktin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/routes/scraping_mrktin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_api/routes/test_scraping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_api/routes/gen_ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/routes/gen_ai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_api/routes/scraping_bazaar.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/routes/scraping_bazaar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_api/routes/scraping_mrktin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_api/routes/scraping_marktin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,7 @@
       <workItem from="1749145989613" duration="8000" />
       <workItem from="1749161289370" duration="3192000" />
       <workItem from="1749205687589" duration="55780000" />
-      <workItem from="1749378797340" duration="15198000" />
+      <workItem from="1749378797340" duration="26591000" />
     </task>
     <task id="LOCAL-00001" summary="2 commit">
       <option name="closed" value="true" />
@@ -330,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749345822154</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Commit 13- scraping market in and bazaar ok">
+      <option name="closed" value="true" />
+      <created>1749404097010</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749404097010</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +377,8 @@
     <MESSAGE value="Commit 11- scraping xalkiadakis" />
     <MESSAGE value="Commit 11- scraping xalkiadakis, req update" />
     <MESSAGE value="Commit 12- scraping market in ok, pending xalkiadakis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 12- scraping market in ok, pending xalkiadakis" />
+    <MESSAGE value="Commit 13- scraping market in and bazaar ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 13- scraping market in and bazaar ok" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UniPiShop$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1748955337828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
@@ -376,9 +386,10 @@
     <SUITE FILE_PATH="coverage/UniPiShopAPI$scraping_mrktin.coverage" NAME="scraping_mrktin Coverage Results" MODIFIED="1749391710547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$mongo_products.coverage" NAME="mongo_products Coverage Results" MODIFIED="1748798693466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/routes" />
     <SUITE FILE_PATH="coverage/UniPiShopAPI$final_products.coverage" NAME="final_products Coverage Results" MODIFIED="1749223298368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />
+    <SUITE FILE_PATH="coverage/UniPiShopAPI$test.coverage" NAME="test Coverage Results" MODIFIED="1749407502692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShopAPI$db_products.coverage" NAME="db_products Coverage Results" MODIFIED="1749309339663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />
     <SUITE FILE_PATH="coverage/UniPiShopAPI$scraping_xal.coverage" NAME="scraping_xal Coverage Results" MODIFIED="1749322173788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />
-    <SUITE FILE_PATH="coverage/UniPiShopAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1749321430181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UniPiShopAPI$main.coverage" NAME="main Coverage Results" MODIFIED="1749405045401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UniPiShopAPI$gen_ai.coverage" NAME="gen_ai Coverage Results" MODIFIED="1749218114066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />
     <SUITE FILE_PATH="coverage/UniPiShop$db_seeding.coverage" NAME="db_seeding Coverage Results" MODIFIED="1748884169101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_shop/model" />
     <SUITE FILE_PATH="coverage/UniPiShopAPI$scraping_.coverage" NAME="scraping_ Coverage Results" MODIFIED="1749342633007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_api/routes" />

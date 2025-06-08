@@ -13,7 +13,7 @@ from app_api.model import server
 
 GROQ_API_KEY = "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"
 
-
+# Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
 def groq(prompt):
     post_url = "https://api.groq.com/openai/v1/chat/completions"
     post_data = {
@@ -38,7 +38,7 @@ def groq(prompt):
     return answer["choices"][0]["message"]["content"]
 
 
-# Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt
+# Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt και επιστροφή απάντησης
 @server.route("/finalcart", methods=["POST"])
 def get_cart():
     user_cart = request.get_json()  # Επικοινωνία με το F-end για το τελικό καλάθι
@@ -51,7 +51,7 @@ def get_cart():
     a2 = groq(q2)
     print(a1, a2)
 
-    return jsonify({"Συνταγή": a1}, {"Αξιολόγηση": a2}), 200
+    jsonify({"Συνταγή": a1, "Αξιολόγηση": a2}), 200
 
 
 

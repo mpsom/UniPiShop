@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from flask import jsonify, request
 from app_api.model import server
 
-@server.route("/scrapingmarketin", methods=["POST"])
+@server.route("/scrapingmarkin", methods=["POST"])
 def scraping_mrktin():
     name = request.get_json()
     params = {"Title": name}
@@ -43,6 +43,7 @@ def scraping_mrktin():
                 image= "Δεν βρέθηκε εικόνα"
     else:
         return jsonify({"message": "Δεν βρέθηκε προϊόν!"})
+
     # Τιμή
     price = soup.select_one("div.new-price-wrapper")
     if price is not None:

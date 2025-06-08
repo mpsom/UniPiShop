@@ -58,7 +58,7 @@ def insert_product():
 
 
 # Read operations
-# Get all products
+# Get amount of products
 @server.route("/productsamount", methods=["GET"])
 def get_products_count():
     number_of_products = products.count_documents({})
@@ -89,8 +89,16 @@ def get_product_by_name(name):
 
     return Response("No product found", status=500, mimetype="application/json")
 
+# Delete product
+@server.route("/deleteproduct/<string:name>", methods=["DELETE"])
+def delete_student():
+    data
+    res = products.find_one_and_delete({"name": "student@unipi.gr"})
+    print("Deleted the student: ", res["_id"])
 
-# Επιστροφη ολων των προιοντων
+
+
+# Επιστροφή όλων των προϊόντων
 @server.route("/getallproducts", methods=["GET"])
 def get_all_products():
     all_products = []

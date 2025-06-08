@@ -9,7 +9,7 @@ from app_api.model import server
 
 
 @server.route("/scrapingbazaar", methods=["POST"])
-def scraping_bazaar(name):
+def scraping_bazaar():
     name = request.get_json()
     params = {"route": "product/search", "search": name}
     url = "https://www.bazaar-online.gr/index.php?" + urlencode(params)
