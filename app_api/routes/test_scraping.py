@@ -1,11 +1,14 @@
 from urllib import response
-from urllib.parse import urlencode as urlencode
+from urllib.parse import urlencode
 from time import sleep
 import requests
 import random
 from bs4 import BeautifulSoup
 
-# def scraping_xal(name):
+
+
+@server.route("/scrapingxal", methods=["POST"])
+def scraping_xal(name):
 name = "ΦΑΡΜΑ ΑΝΤΩΝΑΚΗ Καπνιστή Μπριζόλα"
 params = {"sq": name}
 url = "https://xalkiadakis.gr/search?" + urlencode(params)
@@ -17,7 +20,7 @@ headers = {
 s = requests.Session()
 page = s.get(url, headers=headers)
 soup = BeautifulSoup(page.content, "html.parser")
-print(page.status_code,url, page.content)
+print(page.status_code,url)
 sleep(random.uniform(2, 5))
 
 # Url περιγραφής και εικόνας
