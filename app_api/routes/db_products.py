@@ -90,11 +90,16 @@ def get_product_by_name(name):
     return Response("No product found", status=500, mimetype="application/json")
 
 # Delete product
-@server.route("/deleteproduct/<string:name>", methods=["DELETE"])
-def delete_student():
-    data
-    res = products.find_one_and_delete({"name": "student@unipi.gr"})
-    print("Deleted the student: ", res["_id"])
+# @server.route("/deleteproduct/<string:name>", methods=["DELETE"])
+# def delete_student():
+#     data = request.get_json()
+#     name = data['name']
+#     res = products.find_one_and_delete({"name": name})
+#     if res is not None:
+#     return Response("")
+#
+#     res = products.find_one_and_delete({"name": "student@unipi.gr"})
+#     print("Deleted the student: ", res["_id"])
 
 
 

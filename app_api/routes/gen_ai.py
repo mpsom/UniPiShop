@@ -42,16 +42,15 @@ def groq(prompt):
 @server.route("/finalcart", methods=["POST"])
 def get_cart():
     user_cart = request.get_json()  # Επικοινωνία με το F-end για το τελικό καλάθι
-    product_names = [item["name"] for item in user_cart] # Δημιουργία λίστας με τα ονόματα απο το λεξικό
-    print(product_names)
-    q1= "Δώσε μου συνταγή για τα προϊόντα: " + " ".join(product_names)
-    q2 = "Βαθμολόγησε διατροφικά τις επιλογές μου: " +" ".join(product_names)
+    print(user_cart)
+    q1= "Δώσε μου συνταγή για τα προϊόντα: " + user_cart
+    q2 = "Βαθμολόγησε διατροφικά τις επιλογές μου: " + user_cart
     print(q2)
     a1 = groq(q1)
     a2 = groq(q2)
     print(a1, a2)
 
-    jsonify({"Συνταγή": a1, "Αξιολόγηση": a2}), 200
+    return  jsonify({"Συνταγή": a1, "Αξιολόγηση": a2}), 200
 
 
 
