@@ -6,12 +6,12 @@ from flask import jsonify, request # αντικείμενο της Flask για 
 from app_api.model import server
 
 # Unused AI-API keys
-# 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
+
 # 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
 # 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
 
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
 def groq(prompt):
@@ -40,7 +40,7 @@ def groq(prompt):
 
 # Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt και επιστροφή απάντησης
 @server.route("/finalcart", methods=["POST"])
-def get_cart():
+def get_aicart():
     user_cart = request.get_json()  # Επικοινωνία με το F-end για το τελικό καλάθι
     print(user_cart)
     q1= "Δώσε μου συνταγή για τα προϊόντα: " + user_cart
