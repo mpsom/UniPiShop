@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from flask import request, jsonify, Response
 import json
 
+
 from app_api.model import server
 
 # Συλλογή για τις αγορές

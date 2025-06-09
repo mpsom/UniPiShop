@@ -11,7 +11,7 @@ from app_api.model import server
 # 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
 
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
 def groq(prompt):
@@ -24,33 +24,47 @@ def groq(prompt):
         "top_p": 1,
         "stream": False,
     }
-    json_data = json.dumps(post_data)
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Authorization": f"Bearer " + GROQ_API_KEY,
     }
-    response_post = requests.post(post_url, data=json_data, headers=headers)
 
-    # print("\nPOST Request Status Code:", response_post.status_code)
-    # print("POST Request JSON Response:")
-    answer = response_post.json()
-    print(answer)
-    return answer["choices"][0]["message"]["content"]
+    try:
+        response_post = requests.post(post_url, json=post_data, headers=headers)
+        data = response_post.json()
+        print("🟡 AI response:", data)
 
+        # Αν υπάρχει "choices", επιστρέφουμε το content
+        if "choices" in data and data["choices"]:
+            return data["choices"][0]["message"]["content"]
+
+        # Αν υπάρχει σφάλμα
+        if "error" in data:
+            return f"❌ AI Error: {data['error'].get('message', 'Άγνωστο σφάλμα')}"
+
+        return "❌ Δεν επιστράφηκε απάντηση από το AI."
+
+    except Exception as e:
+        print("🔴 Σφάλμα σύνδεσης ή αποκωδικοποίησης:", e)
+        return "❌ Πρόβλημα επικοινωνίας με το AI σύστημα."
 
 # Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt και επιστροφή απάντησης
 @server.route("/finalcart", methods=["POST"])
 def get_cart():
-    user_cart = request.get_json()  # Επικοινωνία με το F-end για το τελικό καλάθι
-    print(user_cart)
-    q1= "Δώσε μου συνταγή για τα προϊόντα: " + user_cart
-    q2 = "Βαθμολόγησε διατροφικά τις επιλογές μου: " + user_cart
-    print(q2)
+    user_cart = request.get_json()
+
+    if not isinstance(user_cart, list):
+        return jsonify({"error": "Bad format, expected a list of products"}), 400
+
+    product_names = ", ".join([item.get("name", "") for item in user_cart])
+
+    q1 = f"Δώσε μου συνταγή για τα προϊόντα: {product_names}"
+    q2 = f"Βαθμολόγησε διατροφικά τις επιλογές μου: {product_names}"
+
     a1 = groq(q1)
     a2 = groq(q2)
-    print(a1, a2)
 
-    return  jsonify({"Συνταγή": a1, "Αξιολόγηση": a2}), 200
+    return jsonify({"recipe": a1, "nutrition": a2}), 200
 
 
 
