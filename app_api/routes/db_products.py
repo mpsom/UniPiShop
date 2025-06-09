@@ -58,7 +58,7 @@ def insert_product():
 
 
 # Read operations
-# Get amount of products
+# Get number of products
 @server.route("/productsamount", methods=["GET"])
 def get_products_count():
     number_of_products = products.count_documents({})

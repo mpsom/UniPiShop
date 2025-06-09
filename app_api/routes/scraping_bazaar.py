@@ -31,7 +31,6 @@ def scraping_bazaar():
     print(page.status_code, url)
     sleep(random.uniform(2, 5))
 
-
     # Url περιγραφής και εικόνας
     container = soup.find("div", id="product-search")
     product = container.find("div", class_="product-thumb") if container else None
@@ -70,11 +69,12 @@ def scraping_bazaar():
         description = card_body.get_text(strip=True)
         print(description)
     else:
-        description="Δεν βρέθηκε περιγραφή"
+        description = "Δεν βρέθηκε περιγραφή"
 
     print(f"Product: {url} \n Image: {image}\n Price: {price} \n Description: {description}")
 
     sleep(random.uniform(2, 5))
+    print(image, price, description,"βγαινω απο το market call")
     return jsonify({"Εικόνα": image,
-                        "Τιμή":price,
-                        "Περιγραφή": description})
+                    "Τιμή": price,
+                    "Περιγραφή": description})
