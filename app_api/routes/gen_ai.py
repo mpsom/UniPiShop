@@ -58,6 +58,6 @@ def get_cart_response():
     response_nutrition = groq(prompt_nutrition)
 
     return jsonify({
-        "Συνταγή": response_recipe,
-        "Αξιολόγηση": response_nutrition
+        "recipe": response_recipe,
+        "nutrition": response_nutrition
     }), 200
