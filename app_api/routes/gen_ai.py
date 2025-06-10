@@ -1,19 +1,12 @@
-import requests #Χρήση για αιτήματα (requests) προς άλλους servers
+import requests
 import json
-
-from flask import jsonify, request # αντικείμενο της Flask για τον server για διάβασμα τι έστειλε κάποιος client
-
+from flask import jsonify, request
 from app_api.model import server
 
-# Unused AI-API keys
-# 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
-# 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
-# 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
+# Κλειδί GROQ API
+GROQ_API_KEY = "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"
 
-
-GROQ_API_KEY = "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"
-
-# Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
+# Συνάρτηση που καλεί το AI API με το κατάλληλο prompt
 def groq(prompt):
     post_url = "https://api.groq.com/openai/v1/chat/completions"
     post_data = {
@@ -24,21 +17,21 @@ def groq(prompt):
         "top_p": 1,
         "stream": False,
     }
+
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer " + GROQ_API_KEY,
+        "Authorization": f"Bearer {GROQ_API_KEY}",
     }
 
     try:
         response_post = requests.post(post_url, json=post_data, headers=headers)
         data = response_post.json()
+
         print("🟡 AI response:", data)
 
-        # Αν υπάρχει "choices", επιστρέφουμε το content
         if "choices" in data and data["choices"]:
             return data["choices"][0]["message"]["content"]
 
-        # Αν υπάρχει σφάλμα
         if "error" in data:
             return f"❌ AI Error: {data['error'].get('message', 'Άγνωστο σφάλμα')}"
 
@@ -48,9 +41,9 @@ def groq(prompt):
         print("🔴 Σφάλμα σύνδεσης ή αποκωδικοποίησης:", e)
         return "❌ Πρόβλημα επικοινωνίας με το AI σύστημα."
 
-# Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt και επιστροφή απάντησης
+# Route για το τελικό καλάθι προϊόντων
 @server.route("/finalcart", methods=["POST"])
-def get_cart():
+def get_cart_response():
     user_cart = request.get_json()
 
     if not isinstance(user_cart, list):
@@ -58,76 +51,13 @@ def get_cart():
 
     product_names = ", ".join([item.get("name", "") for item in user_cart])
 
-    q1 = f"Δώσε μου συνταγή για τα προϊόντα: {product_names}"
-    q2 = f"Βαθμολόγησε διατροφικά τις επιλογές μου: {product_names}"
+    prompt_recipe = f"Δώσε μου συνταγή για τα προϊόντα: {product_names}"
+    prompt_nutrition = f"Βαθμολόγησε διατροφικά τις επιλογές μου: {product_names}"
 
-    a1 = groq(q1)
-    a2 = groq(q2)
+    response_recipe = groq(prompt_recipe)
+    response_nutrition = groq(prompt_nutrition)
 
-    return jsonify({"recipe": a1, "nutrition": a2}), 200
-
-
-
-
-
-
-
-import requests #Χρήση για αιτήματα (requests) προς άλλους servers
-import json
-
-from flask import jsonify, request # αντικείμενο της Flask για τον server για διάβασμα τι έστειλε κάποιος client
-
-from app_api.model import server
-
-# Unused AI-API keys
-
-# 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
-# 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
-
-
-GROQ_API_KEY = "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"
-
-# Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
-def groq(prompt):
-    post_url = "https://api.groq.com/openai/v1/chat/completions"
-    post_data = {
-        "messages": [{"role": "user", "content": prompt}],
-        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
-        "temperature": 1,
-        "max_completion_tokens": 1024,
-        "top_p": 1,
-        "stream": False,
-    }
-    json_data = json.dumps(post_data)
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {GROQ_API_KEY}",
-    }
-    response_post = requests.post(post_url, data=json_data, headers=headers)
-
-    # print("\nPOST Request Status Code:", response_post.status_code)
-    # print("POST Request JSON Response:")
-    answer = response_post.json()
-    print(answer)
-    return answer["choices"][0]["message"]["content"]
-
-
-# Κλήση από την frontend εφαρμογή με για το τελικό καλάθι και POST AI prompt και επιστροφή απάντησης
-@server.route("/finalcart", methods=["POST"])
-def get_aicart():
-    user_cart = request.get_json()  # Επικοινωνία με το F-end για το τελικό καλάθι
-    print(user_cart)
-    q1= "Δώσε μου συνταγή για τα προϊόντα: " + user_cart
-    q2 = "Βαθμολόγησε διατροφικά τις επιλογές μου: " + user_cart
-    print(q2)
-    a1 = groq(q1)
-    a2 = groq(q2)
-    print(a1, a2)
-
-    return  jsonify({"Συνταγή": a1, "Αξιολόγηση": a2}), 200
-
-
-
-
-
-
+    return jsonify({
+        "Συνταγή": response_recipe,
+        "Αξιολόγηση": response_nutrition
+    }), 200
