@@ -1,3 +1,5 @@
+import uuid
+
 from pymongo import MongoClient
 from flask import request, jsonify, Response
 import json
@@ -11,7 +13,7 @@ products = db["StoreGoods"]
 
 
 # Insert product
-# Create Operation
+# Δημιουργία
 @server.route("/insertproduct", methods=["POST"])
 def insert_product():
     # Request JSON data
@@ -19,9 +21,9 @@ def insert_product():
     try:
         data = json.loads(request.data)
     except Exception as e:
-        return Response("bad json content", status=500, mimetype="application/json")
+        return Response("Μη σωστό περιεχόμενο json", status=500, mimetype="application/json")
     if data == None:
-        return Response("bad request", status=500, mimetype="application/json")
+        return Response("Κενή φόρμα", status=500, mimetype="application/json")
     if (
             not "name" in data
             or not "category" in data
@@ -31,9 +33,9 @@ def insert_product():
             or not "image" in data
     ):
         return Response(
-            "Not all information included", status=500, mimetype="application/json"
+            "Δεν παρέχονται όλες οι πληροφορίες", status=500, mimetype="application/json"
         )
-
+# Έλεγχος για ύπαρξη προϊόντος με το δοθέν όνομα
     if products.count_documents({"name": data["name"]}) > 0:
         return Response(
             "A product with the same name already exists",
@@ -42,6 +44,7 @@ def insert_product():
         )
     else:
         product = {
+            "_id": str(uuid.uuid4()),
             "name": data["name"],
             "category": data["category"],
             "subcategory": data["subcategory"],
@@ -53,19 +56,19 @@ def insert_product():
         # Add product to the "products" database
         products.insert_one(product)
         return Response(
-            "It was added to the product database", status=200, mimetype="application/json"
+            "Προστέθηκε στη βάση δεδομένων των προϊόντων", status=200, mimetype="application/json"
         )
 
 
 # Read operations
-# Get number of products
+# Συνολικός αριθμός προϊόντων
 @server.route("/productsamount", methods=["GET"])
 def get_products_count():
     number_of_products = products.count_documents({})
-    return jsonify({"Number of products": number_of_products})
+    return jsonify({"Η ποσότητα των προίόντων είναι: ": number_of_products})
 
 
-# Find product by name
+# Αναζήτηση με όνομα
 @server.route("/getproduct/<string:name>", methods=["GET"])
 def get_product_by_name(name):
     if name == None:
@@ -87,21 +90,7 @@ def get_product_by_name(name):
     if filtered_products:
         return jsonify(filtered_products)
 
-    return Response("No product found", status=500, mimetype="application/json")
-
-# Delete product
-# @server.route("/deleteproduct/<string:name>", methods=["DELETE"])
-# def delete_student():
-#     data = request.get_json()
-#     name = data['name']
-#     res = products.find_one_and_delete({"name": name})
-#     if res is not None:
-#     return Response("")
-#
-#     res = products.find_one_and_delete({"name": "student@unipi.gr"})
-#     print("Deleted the student: ", res["_id"])
-
-
+    return Response("Δε βρέθηκε προϊόν", status=500, mimetype="application/json")
 
 # Επιστροφή όλων των προϊόντων
 @server.route("/getallproducts", methods=["GET"])
@@ -118,4 +107,60 @@ def get_all_products():
             "image": product["image"]
         })
     return jsonify(all_products)
+
+# Delete operation
+# Διαγραφή προϊόντος
+@server.route("/deleteproduct/<string:id>", methods=["DELETE"])
+def delete_product(id):
+    try:
+        if id == None:
+            return Response("Δεν καταχωρήθηκε προϊόν για διαγραφή", status=500, mimetype="application/json")
+        else:
+            res = products.find_one_and_delete({"_id": id})
+        if res is not None:
+            return Response("Διαγράφηκε το προϊόν", status=200, mimetype="application/json")
+        else:
+            return Response("Δεν υπάρχει προϊόν με αυτό το όνομα στη βάση δεδομένων", status=200, mimetype="application/json")
+    except Exception as e:
+        return Response(
+            '{"error": "Προέκυψε σφάλμα στο server"}',
+            status=500,
+            mimetype="application/json")
+
+# Update operation
+# Ενημέρωση προϊόντος
+@server.route("/updateproduct", methods=["PUT"])
+def update_product():
+    try:
+        data = json.loads(request.data)
+    except Exception as e:
+        return Response("Μη σωστό περιεχόμενο json", status=500, mimetype="application/json")
+
+    if data is None:
+        return Response("Κενή φόρμα", status=500, mimetype="application/json")
+
+    if "_id" not in data:
+        return Response("Δεν παρέχεται _id προϊόντος", status=500, mimetype="application/json")
+
+    # Έλεγχος ύπαρξης προϊόντος
+    existing_product = products.find_one({"_id": data["_id"]})
+    if not existing_product:
+        return Response("Το προϊόν δεν βρέθηκε", status=404, mimetype="application/json")
+
+    # Αφαίρεση
+    update_data = data.copy()
+    update_data.pop("_id", None)
+
+    # Ενημερώνεις με ό,τι σου στείλει η φόρμα (χωρίς περιορισμό)
+    if not update_data:
+        return Response("Δεν δόθηκαν στοιχεία προς ενημέρωση", status=400, mimetype="application/json")
+
+    result = products.update_one({"_id": data["_id"]}, {"$set": update_data})
+    if result.modified_count == 0:
+        return Response("Δεν έγινε καμία αλλαγή", status=200, mimetype="application/json")
+
+    return Response("Το προϊόν ενημερώθηκε επιτυχώς", status=200, mimetype="application/json")
+
+
+
 

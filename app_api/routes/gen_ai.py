@@ -6,12 +6,13 @@ from flask import jsonify, request # αντικείμενο της Flask για 
 from app_api.model import server
 
 # Unused AI-API keys
-# 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
+
 # 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
 # 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
 
 
 GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # Διαμόρφωση συνάρτησης για κλήση του AI API με το body που ορίζει
 def groq(prompt):
